@@ -1,5 +1,11 @@
-$font-size: 23px;
+$font-size-base: 23px;
 
-.example {
-  font-size: $font-size;
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: rgb(134, 166, 199);
 }

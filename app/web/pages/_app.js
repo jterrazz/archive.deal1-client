@@ -4,6 +4,9 @@ import { Provider } from "react-redux";
 import App, { Container } from "next/app";
 import withRedux from "next-redux-wrapper";
 
+import TheNavigationBar from "@comp/patterns/TheNavigationBar";
+import "@/styles/main.scss";
+
 const reducer = (state = { foo: "" }, action) => {
   switch (action.type) {
     case "FOO":
@@ -42,6 +45,7 @@ class MyApp extends App {
     return (
       <Container>
         <Provider store={store}>
+          <TheNavigationBar />
           <Component {...pageProps} />
         </Provider>
       </Container>
