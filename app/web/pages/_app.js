@@ -28,7 +28,7 @@ const makeStore = (initialState, options) => {
   return createStore(reducer, initialState);
 };
 
-class MyApp extends App {
+class WebApp extends App {
   static async getInitialProps({ Component, ctx }) {
     // we can dispatch from here too
     ctx.store.dispatch({ type: "FOO", payload: "foo" });
@@ -53,4 +53,4 @@ class MyApp extends App {
   }
 }
 
-export default withRedux(makeStore)(MyApp);
+export default withRedux(makeStore)(WebApp);
