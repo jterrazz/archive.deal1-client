@@ -11,3 +11,6 @@ Smart contracts
 -> common
 -> mobile
 -> web
+
+ESLINT
+PRETTIER

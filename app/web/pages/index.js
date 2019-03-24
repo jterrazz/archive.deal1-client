@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 
 class IndexPage extends Component {
-  static getInitialProps({ store, isServer, pathname, query }) {
+  static getInitialProps({ store, _isServer, _pathname, _query }) {
     store.dispatch({ type: "FOO", payload: "foo" }); // component will be able to read from store's state when rendered
     return { custom: "custom" }; // you can pass some custom props to component from here
   }
