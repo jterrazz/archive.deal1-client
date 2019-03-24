@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "lint": "eslint"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
