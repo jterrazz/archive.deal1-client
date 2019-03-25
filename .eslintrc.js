@@ -3,28 +3,28 @@ module.exports = {
     browser: true,
     es6: true,
     commonjs: true,
-    jest: true
+    jest: true,
   },
   globals: {
-    artifacts: "readonly"
+    artifacts: 'readonly',
   },
-  extends: "airbnb",
+  extends: ['airbnb', 'prettier'],
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: 'module',
   },
-  parser: "babel-eslint",
-  plugins: ["react"],
+  parser: 'babel-eslint',
+  plugins: ['react', 'prettier'],
   rules: {
-    "react/prop-types": 0,
-    "react/jsx-uses-vars": [2],
-    "no-console": 0,
-    "react/jsx-filename-extension": "off",
-    "no-use-before-define": "off",
-    "import/no-unresolved": "off",
-    "max-len": "off"
-  }
+    'prettier/prettier': 'error',
+    'react/prop-types': 0,
+    'react/jsx-uses-vars': [2],
+    'no-console': 0,
+    'react/jsx-filename-extension': 'off',
+    'no-use-before-define': 'off',
+    'import/no-unresolved': 'off',
+  },
 };
