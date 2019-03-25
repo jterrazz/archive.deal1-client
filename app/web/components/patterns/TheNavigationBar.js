@@ -2,21 +2,17 @@ import React from "react";
 // import PropTypes from "prop-types";
 import Link from "next/link";
 
-class TheNavigationBar extends React.Component {
-  render() {
-    return (
-      <nav className="d-flex fixed-top" style={styles.navbar}>
-        <Link href="/">
-          <div>Home</div>
-        </Link>
-        <Link href="/about">
-          <div>About page</div>
-        </Link>
-        <div>Hello</div>
-      </nav>
-    );
-  }
-}
+const TheNavigationBar = () => (
+  <nav className="d-flex fixed-top" style={styles.navbar}>
+    <Link href="/">
+      <div>Home</div>
+    </Link>
+    <Link href="/about">
+      <div>About page</div>
+    </Link>
+    <div>Hello</div>
+  </nav>
+);
 
 const styles = {
   navbar: {

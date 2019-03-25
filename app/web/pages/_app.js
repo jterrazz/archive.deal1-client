@@ -24,9 +24,7 @@ const reducer = (state = { foo: "" }, action) => {
  * @param {boolean} options.debug User-defined debug mode param
  * @param {string} options.storeKey This key will be used to preserve store in global namespace for safe HMR
  */
-const makeStore = initialState => {
-  return createStore(reducer, initialState);
-};
+const makeStore = initialState => createStore(reducer, initialState);
 
 class WebApp extends App {
   static async getInitialProps({ Component, ctx }) {
