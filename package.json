@@ -17,10 +17,7 @@
         "prettier --write",
         "git add"
       ]
-    },
-    "ignore": [
-      "**/dist/*.min.js"
-    ]
+    }
   },
   "devDependencies": {
     "eslint": "^5.15.3",
