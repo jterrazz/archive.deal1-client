@@ -1,19 +1,35 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import {
+  createStackNavigator,
+  createAppContainer,
+  createBottomTabNavigator
+} from "react-navigation";
 
-const App = () => (
-  <View style={styles.container}>
-    <Text>Open up App.js to start working on your app!</Text>
-  </View>
+import { colors } from "@/AppStyles";
+import HomeScreen from "./screens/HomeScreen";
+
+// TODO Replace createStackNavigator
+const AppNavigator = createStackNavigator(
+  {
+    TabScreens: createBottomTabNavigator({
+      Home: HomeScreen
+      // Auth: AuthScreen,
+      // Onboarding: OnboardingScreen
+    })
+  },
+  {
+    initialRouteName: "TabScreens",
+    cardStyle: {
+      backgroundColor: colors.backgroundBase
+    },
+    defaultNavigationOptions: {
+      header: null
+    }
+  }
 );
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#e70505",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
+const AppContainer = createAppContainer(AppNavigator);
+
+const App = () => <AppContainer />;
 
 export default App;

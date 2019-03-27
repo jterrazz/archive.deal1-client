@@ -9,7 +9,6 @@ module.exports = function configureBabel(api) {
           root: ["."],
           alias: {
             "@": "./",
-            "@comp": "./components/",
             "@common": "../common/"
           }
         }
