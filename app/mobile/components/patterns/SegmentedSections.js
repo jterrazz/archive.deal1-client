@@ -61,13 +61,13 @@ const styles = StyleSheet.create({
   titleContainer: {
     flex: 1,
     justifyContent: "center",
-    padding: sizes.sm,
+    padding: sizes.xs,
     borderBottomWidth: 2,
     borderColor: "transparent"
   },
   titleText: {
     textAlign: "center",
-    padding: sizes.sm,
+    padding: sizes.xs,
     fontSize: sizes.textBase,
     fontWeight: "600"
   }

@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  createStackNavigator,
-  createAppContainer,
-  createBottomTabNavigator
-} from "react-navigation";
+import { createStackNavigator, createAppContainer, createBottomTabNavigator } from "react-navigation";
 
 import { colors } from "@/AppStyles";
 import HomeScreen from "./screens/HomeScreen";

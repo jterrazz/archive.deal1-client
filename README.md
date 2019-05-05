@@ -18,8 +18,9 @@ TODO
 
 Development
 yarn
-
 yarn dev
+yarn upgrade
+
 https://github.com/jhen0409/react-native-debugger
 Cmd + d => toggle debugger
 open "rndebugger://set-debugger-loc?host=localhost&port=8081"

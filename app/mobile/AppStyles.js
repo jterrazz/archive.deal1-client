@@ -5,23 +5,28 @@ export const colors = {
   textClear: "rgb(173, 173, 179)",
   textClearer: "rgb(223, 224, 237)",
   backgroundBase: "rgb(247, 247, 248)",
-  borderClear: "rgb(240, 240, 245)"
+  borderClear: "rgb(240, 240, 245)",
+  primaryBase: "rgb(128, 136, 223)",
+  primaryDark: "rgb(118, 113, 188)",
+  tagColors: [" rgb(244, 173, 148)", "rgb(96, 213, 190)", "rgb(117, 171, 242)", "rgb(245, 207, 70)"]
 };
 
 export const sizes = {
-  sm: 5,
-  base: 10,
-  lg: 15,
-  xl: 20,
+  xs: 5,
+  sm: 10,
+  base: 20,
+  lg: 40,
+  xl: 80,
 
   // Radius
-  borderRadius: 4,
+  borderRadius: 5,
 
   // Text
   textBase: 16,
+  textSmall: 12,
   h1: 23,
-  h2: 16,
-  h3: 12
+  h2: 21,
+  h3: 19
 };
 
 export const shadows = {
