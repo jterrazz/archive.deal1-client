@@ -16,7 +16,7 @@
     "babel-plugin-module-resolver": "^3.2.0",
     "bootstrap": "^4.3.1",
     "eslint-plugin-react": "^7.12.4",
-    "next": "^8.0.3",
+    "next": "^9.3.2",
     "next-redux-wrapper": "^3.0.0-alpha.2",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
