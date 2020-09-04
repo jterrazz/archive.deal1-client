@@ -18,7 +18,7 @@
     "eslint-plugin-react": "^7.12.4",
     "next": "^8.0.3",
     "next-redux-wrapper": "^3.0.0-alpha.2",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-bootstrap": "^1.0.0-beta.5",
